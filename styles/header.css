@@ -14,7 +14,7 @@ header,#menu{
     justify-content: center;
     align-items: center;
     transition: display 0.5s ease-in;
-}
+} 
 
 #fold-btn{
     display: none;
@@ -41,3 +41,7 @@ header,#menu{
     margin: 5px 0;
     transition: 0.4s;
 }
+
+
+
+/* hola  */
