@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Adrián Casado</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <header class="horizontal">
     <div id="menu">
@@ -16,18 +18,45 @@
             <ul>
                 <li><a href="./index.html" class="mid-text">Main Menu</a></li>
                 <li><a href="./about-me.html" class="mid-text">About Me</a></li>
+                <li><a href="./index.html" class="mid-text">Projects</a></li>
+                <li><a href="./index.html" class="mid-text">Formation</a></li>
             </ul>
         </div>
     </div>
-    <div id="title">
-        <div id="title-name">
-            <h1 id="title-name-txt">Adrián Casado</h1>
-        </div>
-        <div id="title-info">
-            <h3 id="title-info-txt">Web & Applications Developer</h3>
+    <div id="title" class="center">
+        <div id="title-name" class="center vertical">
+            <h1 id="title-name-txt" class="center">Adrián Casado</h1>
+            <h3 id="title-info">Web & Applications Developer</h3>
         </div>
     </div>
 </header>
 <body>
+    <div class="container">
+        <img id="myself" src="./src/myself.jpg">
+        <div class="text-div">
+            <h1>Who am I?</h1>
+            <p>Hello! My name is Adrián Casado. I'm an Applications Development student mostly interested in back-end and UX/UI, but I'm open to discover about any type of programming paradigm. In this page, you will be able to see some of both school and personal projects. Feel free to discover me!</p>
+        </div>
+    </div>
 </body>
+<footer class="center">
+    <div id="footer-container">
+        <div class="info">
+            <p>acasadoag2@gmail.com</p>
+            <div class="social">
+                <a href="https://github.com/AdrianCasadoAguilera" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-casado-aguilera-133a38238/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:acasadoag2@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="contact horizontal center">
+            <div class="vertical">
+                <input type="email" placeholder="email">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea id="send-mssg" rows="2" placeholder="Write here..."></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</footer>
 </html>
