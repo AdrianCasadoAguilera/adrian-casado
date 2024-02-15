@@ -21,3 +21,24 @@
 .text-div p{
     font-size: large;
 }
+
+#projects{
+    width: 100%;
+}
+
+.project-cont{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+.project-back{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(50, 80, 50);
+}
+
+#zelda{
+    background-image:url("../src/zelda-project.webp");
+    background-position: 0;
+    background-size: cover;
+}

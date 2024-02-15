@@ -16,10 +16,10 @@
         </label>
         <div id="nav">
             <ul>
-                <li><a href="./index.html" class="mid-text">Main Menu</a></li>
-                <li><a href="./about-me.html" class="mid-text">About Me</a></li>
-                <li><a href="./index.html" class="mid-text">Projects</a></li>
-                <li><a href="./index.html" class="mid-text">Formation</a></li>
+                <li><a href="./index.html" class="menu-text">Main Menu</a></li>
+                <li><a href="./about-me.html" class="menu-text">About Me</a></li>
+                <li><a href="./index.html" class="menu-text">Projects</a></li>
+                <li><a href="./index.html" class="menu-text">Formation</a></li>
             </ul>
         </div>
     </div>
@@ -38,6 +38,19 @@
             <p>Hello! My name is Adrián Casado. I'm an Applications Development student mostly interested in back-end and UX/UI, but I'm open to discover about any type of programming paradigm. In this page, you will be able to see some of both school and personal projects. Feel free to discover me!</p>
         </div>
     </div>
+    <!-- <div class="container">
+        <div class="vertical">
+            <h1>My projects</h1>
+            <div class="horizontal">
+                <div class="project-cont">
+                    <div class="project-front project-cont" id="zelda"></div>
+                    <div class="project-back project-cont"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    
 </body>
 <footer class="center">
     <div id="footer-container">
@@ -49,14 +62,14 @@
                 <a href="mailto:acasadoag2@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
-        <div class="contact horizontal center">
+        <form class="contact horizontal center" action="https://formsubmit.co/acasadoag2@gmail.com" method="post">
             <div class="vertical">
-                <input type="email" placeholder="email">
-                <input type="text" placeholder="subject">
+                <input type="email" name="email" placeholder="email">
+                <input type="text" name="subject" placeholder="subject">
             </div>
-            <textarea id="send-mssg" rows="2" placeholder="Write here..."></textarea>
+            <textarea id="send-mssg" name="message" rows="2" placeholder="Write here..."></textarea>
             <button>Submit</button>
-        </div>
+        </form>
     </div>
 </footer>
 </html>
