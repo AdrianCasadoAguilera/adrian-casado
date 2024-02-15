@@ -1,0 +1,192 @@
+:root{
+    --main-color:rgba(177, 177, 177, 0.555);
+    --main-color-opaque: rgb(177,177,177);
+}
+
+header{
+    width: 100%;
+    top:0;
+    position: sticky;
+}
+
+#title{
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+#title-info{
+    margin-top: 0;
+}
+
+#title-name-txt{
+    margin-bottom: 0;
+}
+
+
+/* MENU */
+
+#fold-btn:checked ~ #nav{
+    display: flex;
+}
+
+#nav{
+    display: none;
+    background-color: var(--main-color-opaque);
+    opacity: 100%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: display 0.5s ease-in;
+    position: absolute;
+    top:0;
+    z-index: 1;
+} 
+
+#fold-btn{
+    display: none;
+}
+
+#fold-btn-txt{
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 30px;
+    border: transparent solid 15px;
+}
+
+/* Menu button drawing */
+
+#fold-btn {
+    display: none;
+}
+
+.click-me {
+    position: relative;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 3px;
+    transition: transform ease 0.3s;
+}
+
+.click-me::before,
+.click-me::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 30px;
+    transition: transform ease 0.3s;
+    transform-origin: center center;
+}
+
+.click-me::before {
+    top: -10px;
+}
+
+.click-me::after {
+    top: 10px;
+}
+
+/* when menu opened: */
+
+#fold-btn:checked + #fold-btn-txt .click-me {
+    background-color: transparent;
+}
+
+#fold-btn:checked + #fold-btn-txt .click-me::before {
+    transform: rotate(45deg) translateY(14px);
+}
+
+#fold-btn:checked + #fold-btn-txt .click-me::after {
+    transform: rotate(-45deg) translateY(-14px);
+}
+
+/*
+
+    FOOTER
+
+*/
+
+footer{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 0;
+    color:black;
+}
+#footer-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer p{
+    margin: 5px;
+}
+.social a i{
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social a i:hover{
+    font-size: 30px;
+    color:rgb(129, 129, 129);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+footer input,#send-mssg{
+    border-radius: 18px;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 5px;
+    color: gray;
+    resize: none;
+    font-family: "Montserrat";
+}
+#send-mssg{
+    height: 50px;
+}
+@media screen and (max-width:600px) {
+    .click-me {
+        width: 70px;
+        height: 10px;
+    }
+    
+    .click-me::before,
+    .click-me::after {
+        width: 70px;
+        height: 10px;
+    }
+    .click-me::before {
+        top: -20px;
+    }
+    
+    .click-me::after {
+        top: 20px;
+    }
+    #fold-btn:checked + #fold-btn-txt .click-me::before {
+        transform: rotate(45deg) translateY(28px);
+    }
+    
+    #fold-btn:checked + #fold-btn-txt .click-me::after {
+        transform: rotate(-45deg) translateY(-28px);
+    }
+}

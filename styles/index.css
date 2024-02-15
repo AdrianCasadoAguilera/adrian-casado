@@ -1,0 +1,44 @@
+#myself{
+    border-radius: 50px;
+    width: 20vw;
+    margin-top: 85px;
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.text-div h1{
+    font-size: xx-large;
+}
+
+.text-div p{
+    font-size: large;
+}
+
+#projects{
+    width: 100%;
+}
+
+.project-cont{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+.project-back{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(50, 80, 50);
+}
+
+#zelda{
+    background-image:url("../src/zelda-project.webp");
+    background-position: 0;
+    background-size: cover;
+}
